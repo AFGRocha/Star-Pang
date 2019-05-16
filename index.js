@@ -13,6 +13,6 @@ app.get('/', function (req, res) {
     //It will find and locate index.html from View or Scripts
 });
 
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {
     console.log('Example app listening on port 3000!')
 })
